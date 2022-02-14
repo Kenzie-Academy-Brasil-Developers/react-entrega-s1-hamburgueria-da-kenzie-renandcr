@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Inter:wght@400;500&family=Nunito&family=Poppins&family=Roboto:wght@500&display=swap");
+:root {
+  --font-1: "Inter", sans-serif;
+
+  --color-primary: #27ae60;
+  --color-primary-50: #93d7af;
+  --color-secondary: #eb5757;
+  --gray-100: #333333;
+  --gray-50: #828282;
+  --gray-20: #e0e0e0;
+  --gray-0: #f5f5f5;
+  --negative: #e60000;
+  --warning: #ffcd07;
+  --sucess: #168821;
+  --information: #155bcb;
+}
+
+.header-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 139px;
+
+  background-color: var(--gray-0);
+  font-family: var(--font-1);
+}
+.header-div-logo img {
+  width: 158px;
+  height: 36px;
+}
+.header-div-input {
+  margin: 5px 18px 0 0px;
+  width: 365px;
+  height: 60px;
+}
+.header-div-input input {
+  width: 365px;
+  height: 60px;
+  border-radius: 8px;
+  padding: 0 10px 0 15px;
+  border: 2px var(--gray-20) solid;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+}
+input::placeholder {
+  color: var(--gray-20);
+}
+.header-div-input button {
+  position: relative;
+  left: 276px;
+  bottom: 52px;
+  width: 107px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--color-primary);
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+@media (max-width: 440px) {
+  .header-div-input {
+    margin: 5px -58px 0 0px;
+    width: 365px;
+    height: 60px;
+  }
+  .header-div-input input {
+    width: 280px;
+    height: 50px;
+  }
+  .header-div-input button {
+    position: relative;
+    left: 210px;
+    bottom: 46px;
+    width: 90px;
+    height: 38px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 800px) {
+  .header-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+  }
+  .header-div-logo {
+    margin: 0 0 0 100px;
+  }
+
+  .header-div-input {
+    margin: 0 140px 0 0px;
+  }
+  .header-div-input input {
+    width: 365px;
+    height: 60px;
+  }
+  .header-div-input button {
+    position: relative;
+    left: 275px;
+    width: 107px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .header-div-logo {
+    margin: 0 0 0 100px;
+  }
+  .header-div-input {
+    margin: 0 140px 0 0px;
+  }
+}
