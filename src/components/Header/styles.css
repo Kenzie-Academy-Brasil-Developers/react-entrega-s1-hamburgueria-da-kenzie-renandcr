@@ -48,6 +48,7 @@ input::placeholder {
   color: var(--gray-20);
 }
 .header-div-input button {
+  cursor: pointer;
   position: relative;
   left: 276px;
   bottom: 52px;
@@ -59,6 +60,26 @@ input::placeholder {
   font-size: 14px;
   font-weight: 500;
   color: #ffffff;
+}
+
+@media (max-width: 430px) {
+  .header-header {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 139px;
+  
+    background-color: var(--gray-0);
+    font-family: var(--font-1); */
+    position: fixed;
+  }
+
+  .header-div-input {
+    margin: 5px 18px 0 0px;
+    width: 365px;
+    height: 60px;
+  }
 }
 
 @media (max-width: 440px) {

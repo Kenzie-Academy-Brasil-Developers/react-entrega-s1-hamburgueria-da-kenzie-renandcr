@@ -22,7 +22,7 @@ function App() {
   const handleClick = (newId) => {
     const findItem = products.find((current) => current.id === newId);
     const findItemCart = currentSale.find((current) => current.id === newId);
-    !findItemCart
+    findItemCart === undefined
       ? setCurrentSale([...currentSale, findItem])
       : alert("Este item já está incluso no carrinho.");
   };
